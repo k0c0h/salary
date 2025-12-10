@@ -4,14 +4,15 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 3009;
 
-mongoose.connect(process.env.MONGODB_URI ||'mongodb+srv://mrsproudd:mrsproudd@cluster0.ad7fs0q.mongodb.net/salary_quiz?appName=Cluster0');
+mongoose.connect(process.env.MONGODB_URI ||'mongodb+srv://mrsproudd:mrsproudd@cluster0.ad7fs0q.mongodb.net/recipemanagementsystem?appName=Cluster0');
 const db = mongoose.connection;
 db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('Connected to Database'));
 
 app.use(express.json());
 
-const authRoutes = require('./routes/salaryRoutes');
-app.use('/salarycalculator', authRoutes);
+const recipeRoutes = require('./routes/recipeRoutes');
+app.use('/dishdash', recipeRoutes);
+
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

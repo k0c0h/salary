@@ -1,5 +1,5 @@
 {
-  "name": "quiz",
+  "name": "tutoria",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,6 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "mongoose": "^9.0.1",
-    "nodemon": "^3.1.11"
+    "mongoose": "^9.0.1"
   }
 }
