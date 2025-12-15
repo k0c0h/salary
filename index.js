@@ -12,7 +12,8 @@ db.once('open', () => console.log('Connected to Database'));
 app.use(express.json());
 
 const compactRoute = require('./routes/compactRoute');
-app.use('/compact_disc', compactRoute);
+app.use('/compactdisc', compactRoute);
+
 
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
