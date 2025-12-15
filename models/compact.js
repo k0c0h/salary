@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const compactSchema = new mongoose.Schema(
     {
-  idCompact: {type: number, required: true, unique: true},
+  idCompact: {type: String, required: true, unique: true},
         serial: {type: String, required: true},
         brand: {type: String, required: true},
         model: {type: String, required: true},
