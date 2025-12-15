@@ -11,8 +11,8 @@ db.once('open', () => console.log('Connected to Database'));
 
 app.use(express.json());
 
-const recipeRoutes = require('./routes/recipeRoutes');
-app.use('/dishdash', recipeRoutes);
+const compactRoute = require('./routes/compactRoute');
+app.use('/compact_disc', compactRoute);
 
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
